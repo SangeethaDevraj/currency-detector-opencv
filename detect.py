@@ -65,11 +65,11 @@ if max_val != 8:
 	print('\nDetected denomination: Rs. ', note)
 
 	audio_file = 'audio/{}.mp3'.format(note)
-	#audio_file = "value.mp3"
-	#tts = gTTS(text=speech_out, lang="en")
-	#tts.save(audio_file)
-	#return_code = subprocess.call(["afplay", audio_file])
-	#playsound(audio_file)
+	audio_file = "value.mp3"
+	tts = gTTS(text=speech_out, lang="en")
+	tts.save(audio_file)
+	return_code = subprocess.call(["afplay", audio_file])
+	playsound(audio_file)
 	(plt.imshow(img3), plt.show())
 
 else:
